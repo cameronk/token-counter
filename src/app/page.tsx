@@ -1,5 +1,16 @@
 import Card from '@/app/Card'
 import { GithubIcon } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata : Metadata = {
+  title: 'Tokenizer',
+  description: 'Count the number of tokens used by various OpenAI models.',
+  openGraph: {
+    images: [
+      '/og.png'
+    ]
+  } 
+}
 
 export default function Home() {
   return (
